@@ -1,0 +1,12 @@
+
+print("Welcome to the tip calculator : ")
+# bill=print(input("Enter the total bill : ")) ~~~This line will give an error. You shoud not use print function while taking an input :)
+bill=int(input("Enter the total bill : "))
+# bill=int(bill)
+tip=float(input("How much percentage of total bill do you want to give as tip : "))
+# tip=int(tip)
+total_bill=float((bill*tip/100)+bill)
+print(f"The total bill is {total_bill}")
+people=int(input("How many people will pay the bill : "))
+per_person=float(round(total_bill/people))
+print(f"Every people should pay {per_person} credits of money")
